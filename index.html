@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Belie News - Check for fake news around the world!</title>
+    <meta name="description" content="Look out for trending fake news around the world!">
+    <meta property="og:title" content="Belie News - Check for fake news around the world!" />
+    <meta property="og:url" content="http://belie.news/" />
+    <meta property="og:description" content="Look out for trending fake news around the world!">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:type" content="article" />
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Raleway" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row pt-lg-5">
+            <div class="col-md-6 align-self-center">
+                <h1>We'll be back soon!</h1>
+                <p>Sorry for the inconvenience caused but we are working on making some major improvements to the
+                    platform to help you tackle the fake news around you more easily. Thank you!</p>
+                <p>-- The BeLie News Team 🤓</p>
+            </div>
+        </div>
+        <div class="row pt-2">
+            <div class="col-md-5 align-self-center">
+                <div class="alert alert-secondary" role="alert">
+                    <h5>Check us back in</h5>
+                    <h6 id="pageTimer"></h6>
+                    <blockquote class="blockquote text-right mb-2">
+                        <footer class="blockquote-footer">Good things take time!</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var timerId = countdown(
+            function (ts) {
+                document.getElementById('pageTimer').innerHTML = ts.toHTML("strong");
+            },
+            1543251600000
+        );
+    </script>
+</body>
+
+</html>
