@@ -17,7 +17,6 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Raleway" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -32,26 +31,7 @@
                 <p>-- The BeLie News Team 🤓</p>
             </div>
         </div>
-        <div class="row pt-2">
-            <div class="col-md-5 align-self-center">
-                <div class="alert alert-secondary" role="alert">
-                    <h5>Check us back in</h5>
-                    <h6 id="pageTimer"></h6>
-                    <blockquote class="blockquote text-right mb-1">
-                        <footer class="blockquote-footer">Good things take time!</footer>
-                    </blockquote>
-                </div>
-            </div>
-        </div>
     </div>
-    <script>
-        var timerId = countdown(
-            function (ts) {
-                document.getElementById('pageTimer').innerHTML = ts.toHTML("strong");
-            },
-            1543251600000
-        );
-    </script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126688998-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
